@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>ndlutil by lawrennd</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>ndlutil</h1>
+        <p>General utilities for MATLAB.</p>
+
+        <p class="view"><a href="https://github.com/lawrennd/ndlutil">View the Project on GitHub <small>lawrennd/ndlutil</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/lawrennd/ndlutil/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/lawrennd/ndlutil/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/lawrennd/ndlutil">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="matlab-ndlutil-toolbox" class="anchor" href="#matlab-ndlutil-toolbox" aria-hidden="true"><span class="octicon octicon-link"></span></a>Matlab Ndlutil Toolbox</h1>
+
+<h2>
+<a id="release-information" class="anchor" href="#release-information" aria-hidden="true"><span class="octicon octicon-link"></span></a>Release Information</h2>
+
+<p><strong>Current release is 0.163</strong>. Added plotMatrix for visualizating matrices on figure axes.</p>
+
+<h4>
+<a id="version-0162" class="anchor" href="#version-0162" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.162</h4>
+
+<p>Added files for printing to latex plots from Octave.</p>
+
+<h4>
+<a id="version-0161" class="anchor" href="#version-0161" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.161</h4>
+
+<p>Updates by Antti to lnDiffErf. Added readBinaryDoubles and printPlot.</p>
+
+<h4>
+<a id="version-016" class="anchor" href="#version-016" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.16</h4>
+
+<p>Release for ICML tutorial. Added cumGamma and gammaPdf. Also added isoctave and several matlab helper files for reading from file IDs.</p>
+
+<h4>
+<a id="version-0159" class="anchor" href="#version-0159" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.159</h4>
+
+<p>Minor release for dimensional reduction demos. Added centeringMatrix.m.</p>
+
+<h4>
+<a id="version-0158" class="anchor" href="#version-0158" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.158</h4>
+
+<p>Antti Honkela provided the files lnDiffErfs and gradLnDiffErfs to assist in computing the DISIM kernel from the kernel toolbox stably.</p>
+
+<h4>
+<a id="version-0157" class="anchor" href="#version-0157" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.157</h4>
+
+<p>Added treeFindLeaves.</p>
+
+<p>Version 0.156
+Moved treeFindParents, treeFindChildren and treeSwapNode into this toolbox from MOCAP toolbox.</p>
+
+<h4>
+<a id="version-0155" class="anchor" href="#version-0155" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.155</h4>
+
+<p>Moved lnCumGaussSum from NCNM toolbox to this toolbox as part of merge of NCNM toolbox into NOISE and IVM toolboxes.</p>
+
+<h4>
+<a id="version-0154" class="anchor" href="#version-0154" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.154</h4>
+
+<p>Added code for checking Hessian matrices.</p>
+
+<h4>
+<a id="version-0153" class="anchor" href="#version-0153" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.153</h4>
+
+<p>Added comments to files and changed jitChol, pdinv and logdet so that they can return any jitter added. If the return the jitter then they don't emit a warning.</p>
+
+<h4>
+<a id="version-0152" class="anchor" href="#version-0152" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.152</h4>
+
+<p>There was a sign error in lnDiffCumGaussian. This has been fixed. The sign error was replicated in the NOISE and PRIOR toolboxes (a case of two wrongs making a 'right'). This means that earlier versions of this toolbox are incompatible with versions of PRIOR before 0.131 and versions of NOISE before 0.131.</p>
+
+<h4>
+<a id="version-0151" class="anchor" href="#version-0151" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.151</h4>
+
+<p>Sped up the sparseDiag command using spdiag, this makes the FGPLVM code run much faster.</p>
+
+<h4>
+<a id="version-015" class="anchor" href="#version-015" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.15</h4>
+
+<p>Fixed inconsistencies in logdet and pdinv and corrected the amount of jitter that is added at first try. Placed the jitter addition in a new file jitChol which is called by both functions.</p>
+
+<p>Added kldivGaussian for computing Gaussian Kullback-Leibler divergences.</p>
+
+<p>Added deg2rad for converting degrees to radians.</p>
+
+<h4>
+<a id="version-0142" class="anchor" href="#version-0142" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.142</h4>
+
+<p>Added sparseDiag and moved data loading methods into the new DATASETS toolbox.</p>
+
+<h4>
+<a id="version-014" class="anchor" href="#version-014" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.14</h4>
+
+<p>Moved in lvmLoadData and mappingLoadData as generic methods of loading in data sets.</p>
+
+<h4>
+<a id="version-0131" class="anchor" href="#version-0131" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.131</h4>
+
+<p>Added files getline.m and tokenise.m which are string utilities for reading and processing files.</p>
+
+<h4>
+<a id="version-013" class="anchor" href="#version-013" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 0.13</h4>
+
+<p>pdinv now adds jitter which is proportional to the mean of the diagonal elements of the matrix.</p>
+
+<p>Page updated on Sun Jun 17 08:11:07 2012</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/lawrennd">lawrennd</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-62968536-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
